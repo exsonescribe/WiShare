@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/advertise_btn"
+            android:layout_width="96dp"
+            android:layout_height="wrap_content"
+            android:onClick="clickAdvertise"
+            android:text="@string/register" />
+
+        <Button
+            android:id="@+id/discover_btn"
+            android:layout_width="96dp"
+            android:layout_height="wrap_content"
+            android:onClick="clickDiscover"
+            android:text="@string/discover" />
+
+        <Button
+            android:id="@+id/connect_btn"
+            android:layout_width="96dp"
+            android:layout_height="wrap_content"
+            android:onClick="clickConnect"
+            android:text="@string/connect" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/chatInput">
+
+            <ListView
+                android:id="@+id/status"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:focusable="true" />
+
+            <ListView
+                android:id="@+id/names"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_toRightOf="@id/status" />
+
+        </RelativeLayout>
+
+        <EditText
+            android:id="@+id/chatInput"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textMultiLine"
+            android:ems="10"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_toLeftOf="@+id/send_btn"/>
+
+        <Button
+            android:id="@+id/send_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="clickSend"
+            android:layout_alignParentRight="true"
+            android:layout_alignBottom="@id/chatInput"
+            android:text="@string/send" />
+    </RelativeLayout>
+
+</LinearLayout>
