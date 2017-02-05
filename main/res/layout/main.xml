@@ -41,29 +41,21 @@
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_above="@+id/chatInput">
-
-            <ListView
-                android:id="@+id/status"
-                android:layout_width="250dp"
-                android:layout_height="wrap_content"
-                android:focusable="true" />
+            android:layout_above="@+id/browser_btn">
 
             <ListView
                 android:id="@+id/names"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_alignParentRight="true"
-                android:layout_toRightOf="@id/status" />
+                android:layout_height="wrap_content" />
 
         </RelativeLayout>
 
-        <EditText
-            android:id="@+id/chatInput"
+        <Button
+            android:id="@+id/browser_btn"
+            android:text="@string/browse"
+            android:onClick="clickBrowse"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:inputType="textMultiLine"
-            android:ems="10"
             android:layout_alignParentBottom="true"
             android:layout_alignParentLeft="true"
             android:layout_toLeftOf="@+id/send_btn"/>
@@ -74,7 +66,7 @@
             android:layout_height="wrap_content"
             android:onClick="clickSend"
             android:layout_alignParentRight="true"
-            android:layout_alignBottom="@id/chatInput"
+            android:layout_alignBottom="@id/browser_btn"
             android:text="@string/send" />
     </RelativeLayout>
 
