@@ -1,12 +1,9 @@
 <resources>
-    <string name="app_name">Another1</string>
-
-    <string name="connect">Connect</string>
-    <string name="discover">Discover</string>
+    <string name="app_name">Another2</string>
     <string name="register">Register</string>
-    <string name="send">Send</string>
+    <string name="discover">Discover</string>
+    <string name="connect">Connect</string>
     <string name="browse">Browse</string>
-    <string name="file_browser_title">Browse</string>
     <string name="select_dir">Select Directory</string>
-
+    <string name="start">Start</string>
 </resources>
